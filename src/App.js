@@ -54,7 +54,7 @@ function App() {
                 <MousePointer className="w-4 h-4 text-white" />
               </div>
               <div>
-                <h1 className="text-xl font-semibold text-gray-900">Cursor Analytics</h1>
+                <h1 className="text-xl font-semibold text-gray-900">Cursor Usage Analytics</h1>
                 <p className="text-gray-500 text-xs">AI usage insights</p>
               </div>
             </div>

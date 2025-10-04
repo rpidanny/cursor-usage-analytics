@@ -1,5 +1,5 @@
 {
-  "name": "cursor-usage-stats",
+  "name": "cursor-usage-analytics",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
