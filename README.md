@@ -1,49 +1,114 @@
-# Getting Started with Create React App
+# Cursor Usage Analytics
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern, elegant React application for analyzing Cursor AI usage patterns and costs. Upload your Cursor usage CSV data to get detailed insights, visualizations, and analytics.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **📊 Comprehensive Analytics**: Track sessions, tokens, costs, and usage patterns
+- **📈 Interactive Charts**: Beautiful visualizations using Recharts
+- **📱 Responsive Design**: Works perfectly on desktop, tablet, and mobile
+- **🎨 Modern UI**: Clean, minimal design with smooth animations
+- **📁 Easy Upload**: Drag & drop CSV file upload with validation
+- **🔍 Detailed Insights**: Model usage analysis, peak usage times, and cost trends
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Prerequisites
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Node.js (v14 or higher)
+- npm or yarn
 
-### `npm test`
+### Installation
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository
+2. Install dependencies:
 
-### `npm run build`
+   ```bash
+   npm install
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+3. Start the development server:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   npm start
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+4. Open [http://localhost:3000](http://localhost:3000) to view the app
 
-### `npm run eject`
+## Usage
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Upload Data**: Drag and drop your Cursor usage CSV file or click to browse
+2. **Try Sample Data**: Use the "Try with Sample Data" button to see the app in action
+3. **View Analytics**: Explore your usage patterns, costs, and insights
+4. **Reset**: Click "Upload New File" to analyze different data
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## CSV Format
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app expects CSV files with the following columns:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Date
+- Kind
+- Model
+- Max Mode
+- Input (w/ Cache Write)
+- Input (w/o Cache Write)
+- Cache Read
+- Output Tokens
+- Total Tokens
+- Cost
 
-## Learn More
+## Technologies Used
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **React 19** - Modern React with hooks
+- **Tailwind CSS** - Utility-first CSS framework
+- **Recharts** - Composable charting library
+- **Lucide React** - Beautiful icons
+- **Create React App** - Development tooling
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Features Overview
+
+### Analytics Dashboard
+
+- Total sessions and tokens
+- Daily usage patterns
+- Cost analysis and trends
+- Model usage distribution
+- Peak usage times
+
+### Visualizations
+
+- Usage over time (Area chart)
+- Token usage trends (Line chart)
+- Daily cost analysis (Bar chart)
+- Model distribution (Pie chart)
+
+### Responsive Design
+
+- Mobile-first approach
+- Adaptive layouts
+- Touch-friendly interactions
+- Optimized for all screen sizes
+
+## Development
+
+### Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
 
 ### Code Splitting
 
