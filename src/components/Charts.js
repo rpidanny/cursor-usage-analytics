@@ -261,7 +261,7 @@ const CostEfficiencyChart = ({ timeSeries }) => {
 
   return (
     <div className="chart-container">
-      <h3 className="text-2xl font-semibold text-gray-900 mb-6">Cost Efficiency Over Time</h3>
+      <h3 className="text-2xl font-semibold text-gray-900 mb-6">Cost per Million Tokens Over Time</h3>
       <div className="h-80">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={dataWithEfficiency}>
@@ -274,14 +274,14 @@ const CostEfficiencyChart = ({ timeSeries }) => {
             <YAxis tick={{ fontSize: 12 }} />
             <Tooltip 
               content={<CustomTooltip />}
-              formatter={(value) => [`$${value.toFixed(2)}`, 'Cost per Token']}
+              formatter={(value) => [`$${(value * 1000000).toFixed(2)}`, 'Cost per Million Tokens']}
             />
             <Line
               type="monotone"
               dataKey="costPerToken"
               stroke="#f59e0b"
               strokeWidth={2}
-              name="Cost per Token ($)"
+              name="Cost per Million Tokens ($)"
             />
           </LineChart>
         </ResponsiveContainer>

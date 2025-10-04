@@ -46,7 +46,10 @@ function App() {
       <header className="bg-white/90 backdrop-blur-xl border-b border-gray-200/30 sticky top-0 z-50">
         <div className="max-w-6xl mx-auto px-6 py-5">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
+            <div 
+              className="flex items-center space-x-4 cursor-pointer hover:opacity-80 transition-opacity duration-200"
+              onClick={resetData}
+            >
               <div className="w-9 h-9 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
                 <MousePointer className="w-4 h-4 text-white" />
               </div>
@@ -151,41 +154,12 @@ function App() {
 
       {/* Footer */}
       <footer className="bg-white/90 backdrop-blur-xl border-t border-gray-200/30 mt-20">
-        <div className="max-w-6xl mx-auto px-6 py-8">
-          <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex items-center space-x-3 mb-4 md:mb-0">
-              <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg flex items-center justify-center">
-                <MousePointer className="w-4 h-4 text-white" />
-              </div>
-              <div>
-                <h3 className="text-sm font-semibold text-gray-900">Cursor Analytics</h3>
-                <p className="text-xs text-gray-500">AI usage insights</p>
-              </div>
-            </div>
-            
-            <div className="flex items-center space-x-6 text-sm text-gray-500">
-              <span className="flex items-center space-x-1">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span>React 19</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span>Tailwind CSS</span>
-              </span>
-              <span className="flex items-center space-x-1">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                <span>Recharts</span>
-              </span>
-            </div>
-          </div>
-          
-          <div className="mt-6 pt-6 border-t border-gray-200/30">
+        <div className="max-w-6xl mx-auto px-6 py-8">          
             <div className="text-center">
               <p className="text-xs text-gray-400">
-                Designed with Apple's design philosophy • Built for developers, by developers
+                Built for developers, by 🤖s
               </p>
             </div>
-          </div>
         </div>
       </footer>
     </div>
